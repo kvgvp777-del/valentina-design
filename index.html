@@ -5,31 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Валентина Кириллова — дизайн лендингов и сайтов</title>
 <meta name="description" content="Лендинги и сайты-визитки для малого бизнеса: структура, тексты, дизайн, адаптив.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://kvgvp777-del.github.io/valentina-design/">
+<meta property="og:title" content="Валентина Кириллова — веб-дизайнер">
+<meta property="og:description" content="Лендинги и сайты-визитки для малого бизнеса: структура, тексты, стиль, адаптив под телефон.">
+<meta property="og:image" content="https://kvgvp777-del.github.io/valentina-design/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <style>
-body{margin:0;font-family:Arial,sans-serif;color:#222;background:#faf7f2;line-height:1.5}
-main{max-width:720px;margin:0 auto;padding:32px 16px}
-h1{font-size:28px;margin:0 0 8px}
-.lead{color:#555;margin-bottom:24px}
-a.card{display:block;background:#fff;border-radius:12px;padding:16px;margin:10px 0;color:#222;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-a.card:hover{box-shadow:0 3px 10px rgba(0,0,0,.15)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#faf7f2;line-height:1.5}
+main{max-width:1040px;margin:0 auto;padding:48px 16px 40px}
+.hero{max-width:640px;margin-bottom:40px}
+h1{font-size:34px;line-height:1.15;margin:0 0 12px}
+.lead{color:#555;font-size:18px;margin:0 0 24px}
+.btn{display:inline-block;background:#222;color:#fff;text-decoration:none;font-weight:bold;padding:14px 24px;border-radius:999px;min-height:48px}
+.btn:hover{background:#000}
+.btn:focus-visible,a.card:focus-visible,footer a:focus-visible{outline:3px solid #a0643a;outline-offset:3px}
+h2{font-size:24px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+a.card{display:block;background:#fff;border-radius:14px;overflow:hidden;color:#222;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.08);transition:box-shadow .2s,transform .2s}
+a.card:hover{box-shadow:0 8px 24px rgba(0,0,0,.14);transform:translateY(-2px)}
+.card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;border-bottom:1px solid #eee}
+.card .info{padding:14px 16px 16px}
 .card b{display:block;font-size:18px}
-.card span{color:#777;font-size:14px}
-footer{margin-top:32px;color:#555}
+.card span{color:#666;font-size:15px}
+footer{margin-top:40px;color:#555}
+footer p{margin:8px 0}
+footer a{color:#222;display:inline-block;padding:6px 0}
+small{color:#666}
+@media (max-width:480px){h1{font-size:28px}main{padding-top:32px}.btn{display:block;text-align:center}}
+@media (prefers-reduced-motion:reduce){a.card{transition:none}a.card:hover{transform:none}}
 </style>
 </head>
 <body>
 <main>
+<section class="hero">
 <h1>Валентина Кириллова</h1>
 <p class="lead">Веб-дизайнер. Делаю лендинги и сайты-визитки для малого бизнеса: структура, тексты, стиль, адаптив под телефон.</p>
+<a class="btn" href="https://t.me/KVGVALENTINA" target="_blank" rel="noopener">Обсудить проект в Telegram</a>
+</section>
+
 <h2>Демо-проекты</h2>
-<a class="card" href="https://realtor-landing-demo.netlify.app"><b>Риелтор</b><span>Лендинг для специалиста по недвижимости</span></a>
-<a class="card" href="https://chemistry-tutor-demo.netlify.app"><b>Репетитор по химии</b><span>Страница услуг и записи на занятия</span></a>
-<a class="card" href="https://womens-tailoring-demo.netlify.app"><b>Пошив женской одежды</b><span>Сайт-визитка ателье</span></a>
-<a class="card" href="https://appliance-master-demo.netlify.app"><b>Ремонт бытовой техники</b><span>Лендинг мастера с формой заявки</span></a>
-<a class="card" href="https://beekeeper-landing-demo.netlify.app"><b>Пчеловод</b><span>Лендинг для продажи мёда</span></a>
+<div class="grid">
+<a class="card" href="https://realtor-landing-demo.netlify.app" target="_blank" rel="noopener"><img src="images/realtor.jpg" alt="Первый экран лендинга риелтора" width="714" height="402" loading="lazy"><div class="info"><b>Риелтор</b><span>Лендинг для специалиста по недвижимости</span></div></a>
+<a class="card" href="https://chemistry-tutor-demo.netlify.app" target="_blank" rel="noopener"><img src="images/chemistry.jpg" alt="Первый экран сайта репетитора по химии" width="714" height="402" loading="lazy"><div class="info"><b>Репетитор по химии</b><span>Страница услуг и записи на занятия</span></div></a>
+<a class="card" href="https://womens-tailoring-demo.netlify.app" target="_blank" rel="noopener"><img src="images/tailoring.jpg" alt="Первый экран сайта-визитки ателье" width="714" height="402" loading="lazy"><div class="info"><b>Пошив женской одежды</b><span>Сайт-визитка ателье</span></div></a>
+<a class="card" href="https://appliance-master-demo.netlify.app" target="_blank" rel="noopener"><img src="images/appliance.jpg" alt="Первый экран лендинга мастера по ремонту техники" width="714" height="402" loading="lazy"><div class="info"><b>Ремонт бытовой техники</b><span>Лендинг мастера с формой заявки</span></div></a>
+<a class="card" href="https://beekeeper-landing-demo.netlify.app" target="_blank" rel="noopener"><img src="images/beekeeper.jpg" alt="Первый экран лендинга пчеловода" width="714" height="402" loading="lazy"><div class="info"><b>Пчеловод</b><span>Лендинг для продажи мёда</span></div></a>
+</div>
+
 <footer>
-<p>Все работы на одной странице: <a href="https://valentina-design.tilda.ws">valentina-design.tilda.ws</a></p>
-<p>Telegram: <a href="https://t.me/KVGVALENTINA">@KVGVALENTINA</a></p>
+<p>Telegram: <a href="https://t.me/KVGVALENTINA" target="_blank" rel="noopener">@KVGVALENTINA</a></p>
+<p>Портфолио на Tilda: <a href="https://valentina-design.tilda.ws" target="_blank" rel="noopener">valentina-design.tilda.ws</a></p>
 <p><small>Данные на демо-страницах вымышленные.</small></p>
 </footer>
 </main>
